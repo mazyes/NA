@@ -1,0 +1,1 @@
+Nikolozi Akhalaia — website-selling portfolio. Portfolio images are taken from slides 3, 4, 5 and 6 of the supplied presentation. WhatsApp: +995 599 548 575.
