@@ -42,7 +42,7 @@ const spring=(p,z=.72)=>{if(p<=0)return 0;if(p>=1)return 1;const w=11,t=p*1.15,w
 function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
 const hash=n=>{const x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x)};
 const stage=document.getElementById('stage');
-function div(parent,css='',html='',cls=''){const d=document.createElement('div');d.className='abs '+cls;d.style.cssText=css;d.innerHTML=html;parent.appendChild(d);return d}
+function div(parent,css='',html='',cls=''){const d=document.createElement('div');d.className='abs '+cls;d.style.cssText=css;if(/(^|;)\s*right:/.test(css)&&!/(^|;)\s*left:/.test(css))d.style.left='auto';d.innerHTML=html;parent.appendChild(d);return d}
 function box(parent,w,h,css='',html='',cls=''){return div(parent,`left:${CX-w/2}px;top:${CY-h/2}px;width:${w}px;height:${h}px;`+css,html,cls)}
 const full=(p,css='',cls='p3')=>div(p,`width:${W}px;height:${H}px;`+css,'',cls);
 function tf(e,o={}){const{x=0,y=0,z=0,rx=0,ry=0,rz=0,s=1,sx=1,sy=1}=o;e.style.transform=`translate3d(${x}px,${y}px,${z}px) rotateX(${rx}deg) rotateY(${ry}deg) rotateZ(${rz}deg) scale(${s*sx},${s*sy})`}
@@ -127,6 +127,7 @@ MODS.c0=[[40,388,264,142],[24,542,372,84]];MODS.c1=[[318,388,264,142],[24,638,37
   M.lens=div(M.search,`left:46px;top:40px;width:40px;height:40px;border-radius:50%;border:5px solid #5b21b6`);
   div(M.search,`left:80px;top:78px;width:18px;height:5px;border-radius:3px;background:#5b21b6;transform:rotate(45deg)`);
   M.q=div(M.search,`left:124px;top:0;height:124px;display:flex;align-items:center;font:500 40px FiraGO;color:#0c0915;white-space:pre`);
+  M.ph=div(M.search,`left:124px;top:0;height:124px;display:flex;align-items:center;font:500 40px FiraGO;color:#a59fb3;white-space:pre`,'ძიება');
   M.caret=div(M.search,`top:38px;width:3px;height:48px;background:#8b5cf6`);
   M.go=div(M.search,`right:14px;top:14px;width:96px;height:96px;border-radius:50%;background:#5b21b6`,`<div class="abs" style="left:31px;top:45px;width:32px;height:6px;background:#fff;border-radius:3px"></div><div class="abs" style="left:45px;top:36px;width:18px;height:18px;border-top:6px solid #fff;border-right:6px solid #fff;transform:rotate(45deg);box-sizing:border-box"></div>`);
   // --- results ---
@@ -170,7 +171,7 @@ function main(t){
   // phone content: profile with a slow feed scroll
   op(M.profile,1-P(t,3.7,4.0));tf(M.feed,{y:-26*t});
   // website build
-  op(M.site,P(t,4.3,4.6)*(1-P(t,9.1,9.4)));
+  op(M.site,P(t,4.3,4.6)*(1-P(t,9.55,9.8)));
   const m=M.m;
   const place=(e,k)=>{const[a,b]=MODS[k];rect(e,...a.map((v,i)=>L(v,b[i],mB)))};
   M.url.style.left=L(80,60,mB)+'px';M.url.style.right=L(80,20,mB)+'px';
@@ -184,8 +185,8 @@ function main(t){
   ['c0','c1','c2'].forEach((k,i)=>{place(m[k],k);bIn(6.0+i*.125,m[k],50);
     m[k+'i'].style.left='18px';m[k+'i'].style.top=L(18,23,mB)+'px';m[k+'l'].style.left=L(18,74,mB)+'px';m[k+'l'].style.top=L(74,28,mB)+'px'});
   // search bar
-  op(M.search,P(t,9.55,9.9));
   const n=Math.floor(C((t-10.3)/.046,0,[...COPY.query].length));
+  op(M.search,P(t,9.45,9.75));op(M.ph,n?0:P(t,9.6,9.9));
   M.q.textContent=[...COPY.query].slice(0,n).join('');
   M.caret.style.left=(126+M.q.offsetWidth)+'px';op(M.caret,t>9.9&&t<11.7&&(n>0&&n<[...COPY.query].length||Math.floor(t*3)%2==0)?1:0);
   tf(M.go,{s:1-.1*(P(t,11.5,11.58)*(1-P(t,11.58,11.8)))});
