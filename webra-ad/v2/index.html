@@ -22,15 +22,15 @@ html,body{margin:0;background:#000;overflow:hidden}
    Official logo: place the original file at brand/logo.svg or brand/logo.png
    ===================================================================== */
 const COPY={
-  hook1:'მხოლოდ Instagram-ის', hook2:'გვერდი გაქვს?', hook3:'შენს ბიზნესს მეტი სჭირდება.',
-  build:'შექმენი.', buildSub:'ვებგვერდის დიზაინი და დეველოპმენტი',
+  hook1:'მხოლოდ Instagram-ის', hook2:'გვერდი გაქვს?', hook3:'შენს ბიზნესს საკუთარი ვებგვერდიც სჭირდება.',
+  build1:'გქონდეს', build2:'შენი ვებგვერდი.', buildSub:'ვებგვერდის დიზაინი და დამზადება',
   query:'ყვავილების მიტანა თბილისში',
-  found:'გამოჩნდი.', foundSub1:'SEO და Google Business Profile-ის', foundSub2:'ოპტიმიზაცია',
-  auto:'ავტომატიზაცია.', autoSub:'რუტინული ამოცანების AI ავტომატიზაცია',
+  found1:'იყავი იქ,', found2:'სადაც გეძებენ.', foundSub1:'SEO და Google Business Profile-ის', foundSub2:'გამართვა',
+  auto1:'ნუ დაკარგავ დროს', auto2:'ერთსა და იმავე საქმეზე.', autoSub1:'AI-ით ყოველდღიური სამუშაო', autoSub2:'პროცესების ავტომატიზაცია',
   manual:'ხელით', automated:'ავტომატურად',
-  tasks:['ახალი მოთხოვნა','ჯავშნის დადასტურება','ინვოისი','შეხსენება','პასუხი კლიენტს','კვირის ანგარიში'],
-  tagline:'შექმენი. გამოჩნდი. ავტომატიზაცია.',
-  cta1:'დაგვიკავშირდი და დაიწყე', cta2:'შენი ბიზნესის განვითარება ონლაინ!',
+  tasks:['ახალი შეკვეთები','ჯავშნების დადასტურება','ინვოისების მომზადება','შეხსენებების გაგზავნა','კლიენტებისთვის პასუხის გაცემა','კვირის ანგარიშები'],
+  tagline:'შექმენი. გამოჩნდი. იმუშავე მარტივად.', services:'ვებგვერდები · Google-ში გამოჩენა · ავტომატიზაცია',
+  cta1:'დაგვიკავშირდი და განავითარე', cta2:'შენი ბიზნესი ონლაინ.',
   ig:'@webra.agency', web:'webraagency.dev',
 };
 const W=1080,H=1920,CX=540,CY=960,DUR=30;
@@ -143,8 +143,8 @@ MODS.c0=[[40,388,264,142],[24,542,372,84]];MODS.c1=[[318,388,264,142],[24,638,37
   // --- headlines ---
   M.h1=tline(Lm,COPY.hook1,{size:104,y:-700});M.h2=tline(Lm,COPY.hook2,{size:104,y:-570});
   M.h3=tline(Lm,COPY.hook3,{size:50,y:-445,weight:500,color:'var(--lav)',shadow:false});
-  M.b1=tline(Lm,COPY.build,{size:160,y:-690});M.b2=tline(Lm,COPY.buildSub,{size:46,y:-545,weight:500,color:'var(--lav)',shadow:false});
-  M.f1=tline(Lm,COPY.found,{size:160,y:-700});M.f2=tline(Lm,COPY.foundSub1,{size:44,y:-560,weight:500,color:'var(--lav)',shadow:false});M.f3=tline(Lm,COPY.foundSub2,{size:44,y:-500,weight:500,color:'var(--lav)',shadow:false});
+  M.b1=tline(Lm,COPY.build1,{size:124,y:-750});M.b1b=tline(Lm,COPY.build2,{size:124,y:-630});M.b2=tline(Lm,COPY.buildSub,{size:44,y:-515,weight:500,color:'var(--lav)',shadow:false});
+  M.f1=tline(Lm,COPY.found1,{size:124,y:-770});M.f1b=tline(Lm,COPY.found2,{size:124,y:-650});M.f2=tline(Lm,COPY.foundSub1,{size:40,y:-540,weight:500,color:'var(--lav)',shadow:false});M.f3=tline(Lm,COPY.foundSub2,{size:40,y:-485,weight:500,color:'var(--lav)',shadow:false});
 })();
 
 function main(t){
@@ -200,27 +200,27 @@ function main(t){
   M.rings.forEach((r,i)=>{const st=12.5+i,p=P(t,st,st+1.6);tf(r,{x:-319,y:146,s:L(1,6,E.out(p))});op(r,p>0&&p<1?(1-p)*.8:0)});
   // headlines
   reveal(M.h1,t,.45,3.45);reveal(M.h2,t,[.85,1.0],3.5);reveal(M.h3,t,1.9,3.55,.08);
-  reveal(M.b1,t,[5.0],8.95);reveal(M.b2,t,5.3,9.0,.08);
-  reveal(M.f1,t,[12.0],14.6);reveal(M.f2,t,12.3,14.65,.06);reveal(M.f3,t,[12.5],14.7);
+  reveal(M.b1,t,[5.0],8.95);reveal(M.b1b,t,[5.25,5.4],8.98);reveal(M.b2,t,5.55,9.02,.08);
+  reveal(M.f1,t,[12.0,12.12],14.6);reveal(M.f1b,t,[12.25,12.37],14.63);reveal(M.f2,t,12.55,14.66,.06);reveal(M.f3,t,[12.75],14.7);
 }
 
 /* ================= AUTOMATION (15–21.6s) ================= */
-const A={};
+const A={};const SPX=-400;
 (()=>{
   const La=LY.auto;
   A.world=full(La);
-  A.label=div(La,`left:0;width:${W}px;top:${CY-430}px;display:flex;justify-content:center;align-items:center;gap:14px;font:600 30px FiraGO;color:var(--lav);letter-spacing:.02em`,`<span class="dot" style="display:inline-block;width:12px;height:12px;border-radius:50%"></span><span class="txt"></span>`);
-  A.spine=box(A.world,3,850,`background:#8b5cf6;transform-origin:50% 0`);
+  A.label=div(La,`left:0;width:${W}px;top:${CY-375}px;display:flex;justify-content:center;align-items:center;gap:14px;font:600 30px FiraGO;color:var(--lav);letter-spacing:.02em`,`<span class="dot" style="display:inline-block;width:12px;height:12px;border-radius:50%"></span><span class="txt"></span>`);
+  A.spine=box(A.world,3,825,`background:#8b5cf6;transform-origin:50% 0`);
   A.nodes=COPY.tasks.map(()=>box(A.world,30,30,`border-radius:50%;background:var(--bg);border:3px solid #8b5cf6`));
-  A.conns=COPY.tasks.map((_,k)=>box(A.world,56,3,`background:#8b5cf6;transform-origin:${k%2?'0':'100%'} 50%`));
+  A.conns=COPY.tasks.map((_,k)=>box(A.world,56,3,`background:#8b5cf6;transform-origin:0 50%`));
   A.pulses=[0,1,2,3,4].map(()=>box(A.world,14,14,`border-radius:50%;background:#f7f5ff;box-shadow:0 0 12px rgba(201,189,252,.8)`));
   const r=rng(12);
   A.chips=COPY.tasks.map((label,k)=>{
     const d=box(A.world,10,80,`border-radius:40px`);
     const inner=div(d,`left:0;top:0;height:80px;display:flex;align-items:center;gap:16px;padding:0 30px 0 20px;font:600 32px FiraGO;color:#f7f5ff;white-space:nowrap`,`<span class="ic" style="display:inline-flex;width:38px;height:38px;border-radius:50%;border:2.5px solid rgba(247,245,255,.45);box-sizing:border-box;align-items:center;justify-content:center"><svg width="18" height="14" viewBox="0 0 18 14"><path d="M2 7.5l4.5 4.5L16 2" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>${label}</span>`);
-    return{d,inner,ic:inner.querySelector('.ic'),ck:inner.querySelector('svg'),px:(r()-.5)*260,py:-40+k*70+(r()-.5)*40,prz:(r()-.5)*12,ph:r()*6.28,w:0,side:k%2?1:-1,y:-330+k*170};
+    return{d,inner,ic:inner.querySelector('.ic'),ck:inner.querySelector('svg'),px:(r()-.5)*260,py:-40+k*70+(r()-.5)*40,prz:(r()-.5)*12,ph:r()*6.28,w:0,y:-300+k*165};
   });
-  A.h1=tline(La,COPY.auto,{size:130,y:-700});A.h2=tline(La,COPY.autoSub,{size:44,y:-575,weight:500,color:'var(--lav)',shadow:false});
+  A.h1=tline(La,COPY.auto1,{size:104,y:-770});A.h1b=tline(La,COPY.auto2,{size:104,y:-655});A.h2=tline(La,COPY.autoSub1,{size:40,y:-545,weight:500,color:'var(--lav)',shadow:false});A.h3=tline(La,COPY.autoSub2,{size:40,y:-490,weight:500,color:'var(--lav)',shadow:false});
 })();
 
 function auto(t){
@@ -237,7 +237,7 @@ function auto(t){
     if(!c.w)c.w=c.inner.offsetWidth;
     const o=E.inOut(P(t,17.0+k*.07,17.9+k*.07));
     const drift=(1-o);
-    let x=L(c.px+8*Math.sin(t*.9+c.ph)*drift,c.side*(48+c.w/2),o),y=L(c.py+6*Math.cos(t*.8+c.ph)*drift,c.y,o),rz=L(c.prz,0,o);
+    let x=L(c.px+8*Math.sin(t*.9+c.ph)*drift,SPX+62+c.w/2,o),y=L(c.py+6*Math.cos(t*.8+c.ph)*drift,c.y,o),rz=L(c.prz,0,o);
     const ty=(k-2.5)*200;x=L(x,0,morph);y=L(y,ty,morph);
     const w=L(c.w,1700,morph),h=L(80,110,morph);
     rect(c.d,CX-w/2,CY-h/2,w,h);c.d.style.borderRadius=L(40,0,morph)+'px';
@@ -250,11 +250,11 @@ function auto(t){
     c.ck.style.opacity=cp;c.ck.style.transform=`scale(${L(.6,1,cp)})`;
   });
   const dim=1-P(t,20.6,20.9);
-  const sp=E.inOut(P(t,17.4,18.1));tf(A.spine,{y:-330+425-425,sy:sp});A.spine.style.top=(CY-330)+'px';op(A.spine,(sp>0?1:0)*dim);
-  A.nodes.forEach((n,k)=>{const a=E.out(P(t,17.5+k*.08,18.0+k*.08));const lit=t>=18.3+k*.25;tf(n,{y:-330+k*170,s:a});n.style.background=lit?'#8b5cf6':'#11061f';op(n,(a>0?1:0)*dim)});
-  A.conns.forEach((c,k)=>{const a=E.out(P(t,17.7+k*.08,18.2+k*.08));tf(c,{x:(k%2?1:-1)*20,y:-330+k*170,sx:a});op(c,(a>0?1:0)*dim)});
-  A.pulses.forEach((p,i)=>{const st=18.05+i*.5,u=(t-st)/1.75;tf(p,{y:-330+u*850});op(p,u>=0&&u<=1&&t<20.6?1:0)});
-  reveal(A.h1,t,[18.0],20.55);reveal(A.h2,t,18.3,20.6,.07);
+  const sp=E.inOut(P(t,17.4,18.1));tf(A.spine,{x:SPX,sy:sp});A.spine.style.top=(CY-300)+'px';op(A.spine,(sp>0?1:0)*dim);
+  A.nodes.forEach((n,k)=>{const a=E.out(P(t,17.5+k*.08,18.0+k*.08));const lit=t>=18.3+k*.25;tf(n,{x:SPX,y:-300+k*165,s:a});n.style.background=lit?'#8b5cf6':'#11061f';op(n,(a>0?1:0)*dim)});
+  A.conns.forEach((c,k)=>{const a=E.out(P(t,17.7+k*.08,18.2+k*.08));tf(c,{x:SPX+28,y:-300+k*165,sx:a});op(c,(a>0?1:0)*dim)});
+  A.pulses.forEach((p,i)=>{const st=18.05+i*.5,u=(t-st)/1.75;tf(p,{x:SPX,y:-300+u*825});op(p,u>=0&&u<=1&&t<20.6?1:0)});
+  reveal(A.h1,t,17.9,20.5,.1);reveal(A.h1b,t,18.15,20.53,.1);reveal(A.h2,t,18.45,20.56,.07);reveal(A.h3,t,18.6,20.6,.07);
 }
 
 /* ================= ZEBRA -> LOGO -> END CARD (20.7–30s) ================= */
@@ -281,10 +281,10 @@ const LOGO={y:-380,w:760};
   B.wrap=box(Lb,1800,2600,'','<svg width="1800" height="2600"><rect width="1800" height="2600" fill="#11061f"/><path fill="#f7f5ff"/></svg>');
   B.rect=B.wrap.querySelector('rect');B.path=B.wrap.querySelector('path');
   B.logo=box(Lb,LOGO.w,200,`display:flex;align-items:center;justify-content:center`);
-  B.tag=tline(Lb,COPY.tagline,{size:50,y:-150,weight:700,maxW:920,shadow:false});
+  B.tag=tline(Lb,COPY.tagline,{size:50,y:-170,weight:700,maxW:920,shadow:false});B.svc=tline(Lb,COPY.services,{size:34,y:-100,weight:500,color:'var(--lav)',maxW:920,shadow:false});
   B.rule=box(Lb,90,3,`background:#8b5cf6`);
-  B.c1=tline(Lb,COPY.cta1,{size:46,y:20,weight:500,color:'var(--lav)',maxW:920,shadow:false});
-  B.c2=tline(Lb,COPY.cta2,{size:46,y:90,weight:500,color:'var(--lav)',maxW:920,shadow:false});
+  B.c1=tline(Lb,COPY.cta1,{size:46,y:35,weight:500,color:'var(--lav)',maxW:920,shadow:false});
+  B.c2=tline(Lb,COPY.cta2,{size:46,y:100,weight:500,color:'var(--lav)',maxW:920,shadow:false});
   const ig=`<svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#f7f5ff" stroke-width="3.5"><rect x="4" y="4" width="38" height="38" rx="11"/><circle cx="23" cy="23" r="8.5"/><circle cx="34" cy="12" r="1.8" fill="#f7f5ff" stroke="none"/></svg>`;
   const gl=`<svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#f7f5ff" stroke-width="3.5"><circle cx="23" cy="23" r="19"/><ellipse cx="23" cy="23" rx="8" ry="19"/><path d="M4 23h38"/></svg>`;
   const rowCss=`display:flex;align-items:center;justify-content:center;gap:22px;font:600 52px FiraGO;color:#f7f5ff;letter-spacing:.005em`;
@@ -315,11 +315,11 @@ function brand(t){
   // official logo
   tf(B.logo,{y:LOGO.y,s:L(.94,1,reveal2)});op(B.logo,reveal2);
   // end card copy (static once in)
-  reveal(B.tag,t,24.6,null,.14);
-  tf(B.rule,{y:-65,sx:E.out(P(t,25.0,25.6))});
-  reveal(B.c1,t,25.0,null,.06);reveal(B.c2,t,25.15,null,.06);
-  const pp=E.out(P(t,25.4,26.1));tf(B.panel,{y:345+20*(1-pp)});op(B.panel,pp);
-  [[B.ig,25.5,290],[B.web,25.65,400]].forEach(([e,st,y])=>{const p=E.out(P(t,st,st+.7));tf(e,{y:y+24*(1-p)});op(e,p)});
+  reveal(B.tag,t,24.6,null,.14);reveal(B.svc,t,24.95,null,.08);
+  tf(B.rule,{y:-30,sx:E.out(P(t,25.0,25.6))});
+  reveal(B.c1,t,25.2,null,.06);reveal(B.c2,t,25.35,null,.06);
+  const pp=E.out(P(t,25.5,26.2));tf(B.panel,{y:350+20*(1-pp)});op(B.panel,pp);
+  [[B.ig,25.6,295],[B.web,25.75,405]].forEach(([e,st,y])=>{const p=E.out(P(t,st,st+.7));tf(e,{y:y+24*(1-p)});op(e,p)});
 }
 
 /* ---------------- GRAIN + VIGNETTE ---------------- */
@@ -337,7 +337,8 @@ function seek(t){
 window.seek=seek;
 
 Promise.all(['500','600','700','800'].map(w=>document.fonts.load(`${w} 40px FiraGO`,'ქართული Aa'))).then(loadLogo).then(()=>document.fonts.ready).then(()=>{
-  [M.h1,M.h2,M.h3,M.b1,M.b2,M.f1,M.f2,M.f3,A.h1,A.h2,B.tag,B.c1,B.c2].forEach(fit);
+  [M.h1,M.h2,M.h3,M.b1,M.b1b,M.b2,M.f1,M.f1b,M.f2,M.f3,A.h1,A.h1b,A.h2,A.h3,B.tag,B.svc,B.c1,B.c2].forEach(fit);
+  [[M.b1,M.b1b],[M.f1,M.f1b],[A.h1,A.h1b],[A.h2,A.h3],[M.f2,M.f3],[B.c1,B.c2]].forEach(([a,b])=>{const z=Math.min(a.size,b.size);a.setSize(z);b.setSize(z)});
   // unify hook line sizes
   const hs=Math.min(M.h1.size,M.h2.size);M.h1.setSize(hs);M.h2.setSize(hs);
   seek(0);window.READY=true;

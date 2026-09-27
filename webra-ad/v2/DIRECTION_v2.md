@@ -53,31 +53,31 @@
 |---|---|---|---|
 | 0.00–0.35 | Fade up from black. The phone arrives on a spring from depth and orbits slowly. The profile feed scrolls gently. | — | Pad, soft air |
 | 0.45 / 0.85 / 1.00 | Headline, two lines, word by word | **მხოლოდ Instagram-ის** / **გვერდი გაქვს?** | Low accent |
-| 1.90 | Supporting line | შენს ბიზნესს მეტი სჭირდება. | Plucks enter |
+| 1.90 | Supporting line | შენს ბიზნესს საკუთარი ვებგვერდიც სჭირდება. | Plucks enter |
 | 3.45–3.90 | Headline lifts out | — | — |
 | 3.70–4.70 | The phone squares to camera. The bezel dissolves and the screen expands into a desktop browser. | — | Air swell |
 | 4.60–6.50 | The layout grid shows. Nav, hero lines, zebra image, CTA and three cards draw in. | — | 6 soft UI ticks. Groove starts at 4.0. |
-| 5.00 / 5.30 | Headline and subtitle | **შექმენი.** / ვებგვერდის დიზაინი და დეველოპმენტი | Low accent |
+| 5.00 / 5.30 | Headline and subtitle | **გქონდეს / შენი ვებგვერდი.** / ვებგვერდის დიზაინი და დამზადება | Low accent |
 | 7.00–8.00 | Desktop → mobile morph. Modules reflow and the nav becomes a burger icon. | — | Air |
 | 8.95–9.40 | Headline lifts out | — | — |
 | 9.10–10.00 | The mobile site rises and flattens into the search bar. | — | Air |
 | 10.30–11.50 | The query types in (46 ms per character) | `ყვავილების მიტანა თბილისში` | Key clicks |
 | 11.50 | Enter | — | Tick |
 | 11.60–12.90 | The business card springs up. The map pin drops. The name, category and action chips reveal. Two rings pulse. | შენი ბიზნესი · ყვავილების მაღაზია · თბილისი · ვებგვერდი · მარშრუტი · დარეკვა | Bell |
-| 12.00 / 12.30 / 12.50 | Headline and two-line subtitle | **გამოჩნდი.** / SEO და Google Business Profile-ის / ოპტიმიზაცია | Low accent |
+| 12.00 / 12.30 / 12.50 | Headline and two-line subtitle | **იყავი იქ, / სადაც გეძებენ.** / SEO და Google Business Profile-ის / გამართვა | Low accent |
 | 14.60–14.90 | Headline lifts out | — | — |
 | 14.90–15.90 | Vertical camera pan down into the automation space | — | Air |
-| 15.60–17.00 | Manual state: a calm pile of task chips | ხელით · ახალი მოთხოვნა · ჯავშნის დადასტურება · ინვოისი · შეხსენება · პასუხი კლიენტს · კვირის ანგარიში | — |
+| 15.60–17.00 | Manual state: a calm pile of task chips | ხელით · ახალი შეკვეთები · ჯავშნების დადასტურება · ინვოისების მომზადება · შეხსენებების გაგზავნა · კლიენტებისთვის პასუხის გაცემა · კვირის ანგარიშები | — |
 | 17.00–18.20 | Chips glide into a pipeline. The spine draws, nodes and connectors grow in. The label changes. | ავტომატურად | — |
-| 18.00 / 18.30 | Headline and subtitle | **ავტომატიზაცია.** / რუტინული ამოცანების AI ავტომატიზაცია | Low accent |
+| 18.00 / 18.30 | Headline and subtitle | **ნუ დაკარგავ დროს / ერთსა და იმავე საქმეზე.** / AI-ით ყოველდღიური სამუშაო / პროცესების ავტომატიზაცია | Low accent |
 | 18.30–19.55 | Pulses flow down the spine. Each chip confirms (✓) on an eighth note. | — | Pentatonic bells |
 | 20.55–20.90 | Headline lifts out. Pipeline dims. | — | Air |
 | 20.75–21.50 | Chips stretch into six full-width white bars. | — | — |
 | 21.40–22.80 | The bars warp into the flowing zebra pattern, with a slow −10° roll. | — | Breakdown and riser |
 | 22.70–23.80 | The zebra pattern folds (subtle 3D tilt) into the logo's footprint over deep purple. | — | Riser peaks |
 | **23.70–24.70** | **The original WEBRA logo resolves from the pattern (0.94 → 1).** Held to 30.0. | — | **Sonic logo on 24.0** |
-| 24.60 | Tagline | **შექმენი. გამოჩნდი. ავტომატიზაცია.** | Tick |
-| 25.00 / 25.15 | Call to action (two lines) | დაგვიკავშირდი და დაიწყე / შენი ბიზნესის განვითარება ონლაინ! | Tick |
+| 24.60 | Tagline | **შექმენი. გამოჩნდი. იმუშავე მარტივად.** / ვებგვერდები · Google-ში გამოჩენა · ავტომატიზაცია | Tick |
+| 25.00 / 25.15 | Call to action (two lines) | დაგვიკავშირდი და განავითარე / შენი ბიზნესი ონლაინ. | Tick |
 | 25.40–26.20 | Contact panel. Held static to 30.0. | **@webra.agency** · **webraagency.dev** | Groove, then fade from 28.5 |
 
 **Safe area:** all type sits between y 250 and y 1450 (1080 × 1920 frame). This clears the Reels, TikTok and Facebook caption area and action rail.
