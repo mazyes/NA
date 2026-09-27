@@ -174,7 +174,7 @@ function main(t){
   op(M.site,P(t,4.3,4.6)*(1-P(t,9.55,9.8)));
   const m=M.m;
   const place=(e,k)=>{const[a,b]=MODS[k];rect(e,...a.map((v,i)=>L(v,b[i],mB)))};
-  M.url.style.left=L(80,60,mB)+'px';M.url.style.right=L(80,20,mB)+'px';
+  M.url.style.left=L(80,60,mB)+'px';{const u='yourbusiness.ge',k=Math.floor(C((t-4.4)/.037,0,u.length));M.url.textContent=t<4.4?'':u.slice(0,k)+(k<u.length&&Math.floor(t*6)%2==0?'|':'');}M.url.style.right=L(80,20,mB)+'px';
   op(m.grid,P(t,4.6,4.9)*(1-P(t,6.4,6.9)));
   const bIn=(st,e,dy=40)=>{const p=E.out(P(t,st,st+.8));tf(e,{y:dy*(1-p)});op(e,P(t,st,st+.25))};
   place(m.nav,'nav');bIn(4.75,m.nav,-30);op(m.links,1-mB);op(m.burger,mB);
